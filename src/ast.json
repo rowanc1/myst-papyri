@@ -1,0 +1,177 @@
+[
+  {
+    "children": [
+      {
+        "type": "text",
+        "value": "Documentation is available in two forms: docstrings provided with the code, and a loose standing reference guide, available from "
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "the NumPy homepage"
+          }
+        ],
+        "title": "",
+        "type": "link",
+        "url": "https://numpy.org"
+      },
+      {
+        "type": "text",
+        "value": "."
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "children": [
+      {
+        "type": "text",
+        "value": "We recommend exploring the docstrings using "
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "IPython"
+          }
+        ],
+        "title": "",
+        "type": "link",
+        "url": "https://ipython.org"
+      },
+      {
+        "type": "text",
+        "value": ", an advanced Python shell with TAB-completion and introspection capabilities.  See below for further instructions."
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "children": [
+      {
+        "type": "text",
+        "value": "The docstring examples assume that "
+      },
+      {
+        "anchor": null,
+        "exists": true,
+        "kind": "module",
+        "reference": {
+          "kind": "module",
+          "module": "numpy",
+          "path": "numpy",
+          "type": "RefInfo",
+          "version": "1.23.5"
+        },
+        "type": "Link",
+        "value": "numpy"
+      },
+      {
+        "type": "text",
+        "value": " has been imported as "
+      },
+      {
+        "domain": null,
+        "role": null,
+        "type": "Directive",
+        "value": "np"
+      },
+      {
+        "type": "text",
+        "value": ":    "
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "type": "code",
+    "value": ">>> import numpy as np",
+    "lang": "python"
+  },
+  {
+    "children": [
+      {
+        "type": "text",
+        "value": "Code snippets are indicated by three greater-than signs    "
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "type": "code",
+    "value": ">>> x = 42\n>>> x = x + 1"
+  },
+  {
+    "children": [
+      {
+        "type": "text",
+        "value": "Use the built-in "
+      },
+      {
+        "type": "inlineCode",
+        "value": "help"
+      },
+      {
+        "type": "text",
+        "value": " function to view a function's docstring    "
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "type": "code",
+    "value": ">>> help(np.sort)\n... # doctest: +SKIP"
+  },
+  {
+    "children": [
+      {
+        "type": "text",
+        "value": "For some objects, "
+      },
+      {
+        "type": "inlineCode",
+        "value": "np.info(obj)"
+      },
+      {
+        "type": "text",
+        "value": " may provide additional help.  This is particularly true if you see the line \"Help on ufunc object:\" at the top of the help() page.  Ufuncs are implemented in C, not Python, for speed. The native Python help() does not know how to view their help, but our np.info() function does."
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "children": [
+      {
+        "type": "text",
+        "value": "To search for documents containing a keyword, do    "
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "type": "code",
+    "value": ">>> np.lookfor('keyword')\n... # doctest: +SKIP"
+  },
+  {
+    "children": [
+      {
+        "type": "text",
+        "value": "General-purpose documents like a glossary and help on the basic concepts of numpy are available under the "
+      },
+      {
+        "type": "inlineCode",
+        "value": "doc"
+      },
+      {
+        "type": "text",
+        "value": " sub-module    "
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "type": "code",
+    "value": ">>> from numpy import doc\n>>> help(doc)\n... # doctest: +SKIP"
+  }
+]
